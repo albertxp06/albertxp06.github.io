@@ -9,7 +9,7 @@
     <meta name="description" content="Albert Lin - Web Designer, Developer, and Photographer">
     <meta name="author" content="Albert Lin">
 
-    <title>Albert Lin</title>
+    <title>Artemis | Albert Lin</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
@@ -18,10 +18,7 @@
     <link href="../assets/css/styles.css" rel="stylesheet">
     <link href="../assets/css/margin-padding-text.css" rel="stylesheet">
     <link href="../assets/css/animate.css" rel="stylesheet">
-    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Yeah, branding's important, but nearly all of the examples shown in class were WAY over styled and were difficult to get the gist of information. They voilated many of the concepts of the reading, mainly "Don't make me think". -->
-    
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">    
 
   </head>
 
@@ -30,7 +27,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Albert Lin</a>
+        <span class="navbar-brand mr-10">Artemis &nbsp;&nbsp;|</span><a class="navbar-brand" href="../index.html">Albert Lin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,7 +65,7 @@
             <h1 class="">Artemis</h1>
             <div class="row">
               <div class="col-md-11 font-s-20">
-                An integrated member management system for tracking timecards, reimbursements, and activity
+                An integrated member management system for tracking timecards, <br>reimbursements, and activity
                 <br>
               </div>
 
@@ -101,6 +98,8 @@
               </div>
             </div>
 
+            <hr>
+
             <div class="row">
               <div class="col-md-12">
                 <h1>Concept and Design</h1>
@@ -126,11 +125,89 @@
                   </ul>
 
                 </p> 
+
+                <p>
+                	It became immeditaely obvious that the officers wanted a clean, easy to use and update method of storing member information. Club members needed a way to quickly clock in and out of the time card and view their status within the club (e.g. dues paid or whether or not they have signed the NDA).
+                </p> 
+                <p>
+                	I decided not to start from scratch and create my own design. Instead, I chose an admin templaye and decided to modify it. Why spend time making something when there are hundreds of viable and tested options out there? The template also includes mayn jQuery and Javascript libraries, that add functionality to the web page such as automatically creating searchable, sortable, and paginated tables. 
+                </p> 
+
+                <h3>The Front-End / UI</h3>
+                <p>The interface needs to be mobile friendly, load quickly, and be fast to use. The log in screen is as simple as it could be. 
+                	While the home page differs slightly between admin users and regular members, "Clock In" is still on the home page, being quick to access. Many pages went through multiple refreshes, to ensure that actions and data is placed in the optimal locations and that there isn't too much hunting. 
+                	<div class="row">
+                		<div class="col-md-3" style="border-right: 1px solid #CCC;">
+                			<div class="row">
+                				<div class="col-md-12">
+                					<img src="../assets/images/projects/login.png" class="fit-width">
+                				</div>
+                				<div class="col-md-12 mt-10">
+                					The login screen is simple.
+                				</div>
+                			</div>
+                		</div>
+                		<div class="col-md-3" style="border-right: 1px solid #CCC;">
+                			<div class="row">
+                				<div class="col-md-12">
+                					<img src="../assets/images/projects/home.png" class="fit-width">
+                				</div>
+                				<div class="col-md-12 mt-10">
+                					The home page (for admins) contains useful information about how many people are active at build day.
+                				</div>
+                			</div>
+                		</div>
+                		<div class="col-md-3" style="border-right: 1px solid #CCC;">
+                			<div class="row">
+                				<div class="col-md-12">
+                					<img src="../assets/images/projects/menu.png" class="fit-width">
+                				</div>
+                				<div class="col-md-12 mt-10">
+                					The menu contains useful links near the top.
+                				</div>
+                			</div>
+                		</div>
+                		<div class="col-md-3">
+                			<div class="row">
+                				<div class="col-md-12">
+                					<img src="../assets/images/projects/attendance.png" class="fit-width">
+                				</div>
+                				<div class="col-md-12 mt-10">
+                					The attendance page contains important information at the top.
+                				</div>
+                			</div>
+                		</div>
+                	</div>
+                	<br>
+                <h3>The Back-End / Guts</h3>
+                <p>The new trend is that servers are beignning to be based on Node.JS and its related frameworks (e.g. React and Angular). While I had some familiarity with it, I decided to rely on PHP and MySQL, from which Attendance and Members were both made from. It was proven to work in real-life scenarios and allowed use of similar code. 
+                </p>
+                <p>To reduce the complexity and potential blocking of cookie storing, Artemis relies on PHP sessions, which are automatically stored on the server and allow users to skip the login screen if they have logged in recently on that device. Each page will repopulate user status and information in case their information (such as Admin or Member status) has been updated by another Admin.
               </div>
             </div>
 
-        
 
+
+            <div class="row">
+              <div class="col-md-12">
+                <h1>Looking Forward</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 pt-10">
+                <p>There were a lot of things that could be improved on. I could have used better, more secure database structure. To prevent MySQL injections, I could have used PDO instead of relying on standard mysqli queries. In general, all the input fields need to be better sanitized before being processed. Additionally, I could have used more AJAX queries to keep users in the same place, especially when dealing with multiple in-page tabs that have tables. </p>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="col-md-2 pt-50">
+          	<div class="row">
+          		<div class="col-md-12">
+          			<h5>Background and Introduction</h5>
+          			<h5>Concept and Design</h5>
+          			<h5>Looking Forward</h5>
+          		</div>
           </div>
         </div>
       </div>
