@@ -175,7 +175,7 @@ Section Text:       15px/1.7 "Robot Condensed", arial, sans-serif;
 }
 
 .project-image {
-    height: 220px !important;
+    height: 240px !important;
 }
 
 .projects-row {
@@ -217,9 +217,9 @@ Section Text:       15px/1.7 "Robot Condensed", arial, sans-serif;
     border-radius: 2px !important;
 }
 
-::-moz-selection{ color: #fff; background:#000; }
-::-webkit-selection{ color: #fff;    background:#000; }
-::selection{ color: #fff;    background:#000; }
+::-moz-selection{ color: #fff; background:#0e76bc; }
+::-webkit-selection{ color: #fff;    background:#0e76bc; }
+::selection{ color: #fff;    background:#0e76bc; }
 
 .animate, .animate *{
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
@@ -481,7 +481,7 @@ h6{
     font-weight: 700;
 }
 p{
-    margin: 0 0 0.85em 0;
+    margin: 0.55em 0 0.55em 0;
 }
 ul, ol{
     margin: 0 0 1.5em 0;
@@ -6152,7 +6152,7 @@ section:hover .small-item-carousel .owl-next{
 
 .sp-logo-wrap .logo{
     display: block;
-    padding: 10px 30px 10px 30px;
+    padding: 30px 30px 15px 30px;
     text-align: center;
     
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
@@ -6163,6 +6163,7 @@ section:hover .small-item-carousel .owl-next{
 } 
 .sp-logo-wrap .logo img{
     max-width: 100%;
+    border-radius: 50%;
 }
 
 /* Menu */
@@ -6555,3 +6556,43 @@ section:hover .small-item-carousel .owl-next{
     .multi-columns-row .col-lg-2:nth-child(6n + 7) { clear: left; }
     .multi-columns-row .col-lg-1:nth-child(12n + 13) { clear: left; }
 }
+
+
+/*
+
+
+
+            <!-- About Section -->
+            <section class="page-section bg-gray-lighter pb-30 pt-30">
+                <div class="relative">
+                    
+                    <div class="container-fluid">
+                    
+                        <h2 class="section-title font-alt mb-20">
+                            Extraordinary Photographer
+                        </h2>
+                        
+                        <div class="row">
+                            
+                            <div class="col-sm-5 col-sm-offset-1">
+                                <div class="section-text mb-70 mb-xs-40">
+                                    <span class="dropcap font-alt">M</span>arius&nbsp;auctor ex&nbsp;id&nbsp;urna faucibus porttitor In&nbsp;maximus ligula semper 
+                                    metus pellentesque mattis.Maecenas volutpat, diam enim sagittis quam, id&nbsp;porta quam.
+                                    Sed id&nbsp;dolor consectetur fermentum nibh volutpat, accumsan purus.
+                                </div>
+                            </div>
+                            
+                            <div class="col-sm-5">
+                                <div class="section-text mb-70 mb-xs-40">
+                                    <span class="dropcap font-alt">P</span>hasellus consectetur vel nunc vitae tempus. Maecenas commodo ipsum non est consequat euismod. 
+                                    Aenean sit amet urna ac velit dapibus ullamcorper at ac ligula. Duis sed laoreet leo. 
+                                    Morbi ac semper lorem ipsum tortor. 
+                                </div>
+                            </div>                        
+                        </div>
+                    </div> <!-- End Container -->            
+                </div>
+            </section>
+            <!-- End About Section -->
+            
+            */
