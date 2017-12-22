@@ -95,6 +95,97 @@ Section Text:       15px/1.7 "Robot Condensed", arial, sans-serif;
 
 -------------------------------------------------------------------*/
 
+/* ==============================
+   CUstom styles
+   ============================== */
+
+.card {
+    letter-spacing: 0.67px;
+    color: black;
+    border: 1px solid #DDDDDD;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: normal;
+}
+
+.place {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #0e76bc;
+}
+
+.card a:hover {
+    text-decoration: none;
+    color: #0a4973;
+    border-bottom: 1px solid #0a4973;
+}
+
+.role {
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    margin-bottom: 4px;
+}
+
+.timeframe {
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 0.75px;
+    float: right;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter:invert(70%);
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background: rgba(0,0,0,0.3);
+}
+
+.image-row div {
+    border-top: 1px solid grey;
+    margin-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #000;
+}
+
+.image-row img{
+    height: 72px !important;
+    opacity: 0.8;
+    -webkit-transition: all 0.33s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.33s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.33s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.33s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.33s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.image-row img:hover{
+    opacity: 1.0;
+    -webkit-transition: all 0.33s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.33s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.33s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.33s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.33s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.project-image {
+    height: 220px !important;
+}
+
+.projects-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 /* ==============================
    Common styles
@@ -376,10 +467,9 @@ a:hover{
 }
 
 h1,h2,h3,h4,h5,h6{
-    margin-bottom: 1.3em;
+    margin-bottom: 0.8em;
     line-height: 1.4;
     font-weight: 400;
-   
 }
 h1{
     font-size: 32px;
@@ -391,7 +481,7 @@ h6{
     font-weight: 700;
 }
 p{
-    margin: 0 0 2em 0;
+    margin: 0 0 0.85em 0;
 }
 ul, ol{
     margin: 0 0 1.5em 0;
@@ -2675,11 +2765,11 @@ a.logo:hover{
 
 .section-title {
     margin-bottom: 15px;
-    font-size: 18px;
+    /* font-size: 18px; */
     font-weight: 400;
     text-transform: none;
     text-align: center;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.05em;
     line-height: 1.4;
 }
 .section-more{
@@ -2722,8 +2812,8 @@ a.logo:hover{
 }
 .section-text{
     font-size: 15px;
-    font-weight: 300;
-    color: #777;
+    font-weight: normal;
+    color: #333;
     line-height: 1.7;
 }
 .section-text blockquote{
@@ -4125,6 +4215,12 @@ a.logo:hover{
     text-transform: none;
     letter-spacing: 0.15em;
 }
+
+.footer-copy a{
+    color: #AAA;
+    text-decoration: none;
+}
+
 .footer-made{
     font-size: 11px;
     color: #999;
@@ -6212,10 +6308,10 @@ section:hover .small-item-carousel .owl-next{
     width: 34px;
     height: 34px;
     line-height: 34px;
-    border: 1px solid rgba(255,255,255, .15);
+    border: 1px solid rgba(255,255,255, .45);
     text-align: center;    
     text-decoration: none;
-    color: #555;
+    color: #AAA;
     
     -webkir-border-radius: 50%; 
     -moz-border-radius: 50%; 

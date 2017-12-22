@@ -163,6 +163,8 @@
 .center		{text-align: center;}
 .font-left	{text-align: left;}
 .font-right	{text-align: right;}
+.float-left {float: left;}
+.float-right {float: right;}
 .font-s-12	{font-size: 12px;}
 .font-s-14	{font-size: 14px;}
 .font-s-16	{font-size: 16px;}
